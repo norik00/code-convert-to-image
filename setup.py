@@ -1,10 +1,11 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name="codeconvert",
     version="1.0.0",
     description="source code file convert to JPG file",
     author="norik00",
+    packages=find_packages('tool'),
     install_requires=['pygments', 'imgkit', 'BeautifulSoup4'],
     entry_points={
         "console_scripts": [
