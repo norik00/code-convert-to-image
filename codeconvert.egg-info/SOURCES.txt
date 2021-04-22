@@ -1,7 +1,0 @@
-setup.py
-codeconvert.egg-info/PKG-INFO
-codeconvert.egg-info/SOURCES.txt
-codeconvert.egg-info/dependency_links.txt
-codeconvert.egg-info/entry_points.txt
-codeconvert.egg-info/requires.txt
-codeconvert.egg-info/top_level.txt
