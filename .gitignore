@@ -1,4 +1,4 @@
 .history
 .memo.md
-codeconvert.egg-info/
+# codeconvert.egg-info/
 __pycache__/

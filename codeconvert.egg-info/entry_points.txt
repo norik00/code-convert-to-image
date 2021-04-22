@@ -1,0 +1,3 @@
+[console_scripts]
+codeconvert = tool.CodeConverter:main
+
