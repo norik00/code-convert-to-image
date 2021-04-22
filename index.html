@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Code To Image</title>
+</head>
+<body>
+<!-- here's source code -->
+<div id=outer>
+    <div id="code">
+        <div class="circle"><p></p><p></p><p></p></div>
+        <section></section>
+    </div>
+</div>
+<!-- / here's source code -->
+
+<!-- here's syntax highlight css -->
+<style></style>
+<!-- / here's syntax highlight css -->
+
+<style id="default">
+html {margin: 0;padding: 0;}
+body {margin:auto;min-height:566px;width:1080px;background: #004247;}
+p {margin: 0;}
+pre {font-size: 24px;font-family: Verdana, Geneva, Tahoma, sans-serif;}
+#outer {width:100%;min-height:566px;}
+#code {padding: 1rem;margin:1.5rem auto;width: 1030px;min-height:8rem;background: #272822;border-radius: 10px;box-shadow: 0px 0px 20px -2px #191919;box-sizing: border-box;}
+.highlight {margin: 1rem;border-radius: 10px;}
+.circle {margin-bottom:2rem;}
+.circle::after{content: "";display: block;clear: both;}
+.circle p {width: .8rem;height: .8rem;margin-right: .5rem;border-radius: 50%;float: left;}
+.circle p:first-child {background: #fc6a27;}
+.circle p:nth-child(2) {background: #fcd527;}
+.circle p:last-child {background: #27fc27;}
+</style>
+</body>
+</html>
