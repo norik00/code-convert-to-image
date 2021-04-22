@@ -5,7 +5,7 @@ setup(
     version="1.0.0",
     description="source code file convert to JPG file",
     author="norik00",
-    packages=find_packages('tool'),
+    packages=find_packages('code-converter-cli'),
     install_requires=['pygments', 'imgkit', 'BeautifulSoup4'],
     entry_points={
         "console_scripts": [
