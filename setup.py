@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="codeconvert",
-    version="1.0.0",
+    version="1.0.1",
     description="source code file convert to JPG file",
     author="norik00",
     packages=find_packages(),
