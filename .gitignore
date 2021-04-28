@@ -2,3 +2,4 @@
 .memo.md
 codeconvert.egg-info/
 __pycache__/
+dist/

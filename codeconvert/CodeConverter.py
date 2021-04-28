@@ -84,7 +84,6 @@ class Convert():
         options = {
             'format': 'jpg',
             'quality': 100,
-            'crop-w': 1080,
             'encoding': self.charset
         }
         
