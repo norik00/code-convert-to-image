@@ -6,7 +6,7 @@
 
 ### How to use at command line
 ```
-$ pip install git+https://github.com/norik00/code-converter
+$ pip install git+https://github.com/norik00/code-convert-to-image
 $ codeconvert samlpe.py
 ```
 

@@ -92,7 +92,7 @@ class Convert():
         os.remove(self.new_html_file_path)
 
 
-if __name__ == '__main__':
+def main():
     
     # argparseの設定
     parser = argparse.ArgumentParser(
