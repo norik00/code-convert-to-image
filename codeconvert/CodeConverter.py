@@ -14,10 +14,10 @@ class Convert():
     def __init__(self, source_file_path, charset):
         self.source_file_path = source_file_path
         self.charset = charset
-
-        new_fname = os.path.basename(self.source_file_path)
-        new_fpath = f'{new_fname}.html'
-
+        
+        self.new_fname = os.path.basename(self.source_file_path)
+        new_fpath = f'{self.new_fname}.html'
+        
         self.new_html_file_path = os.fspath(new_fpath)
 
     
@@ -79,11 +79,12 @@ class Convert():
         html file convert to image file
         """
 
-        img_name = f'{os.path.basename(self.new_html_file_path)}.jpg'
+        img_name = f'{os.path.basename(self.new_fname)}.jpg'
 
         options = {
             'format': 'jpg',
             'quality': 100,
+            'crop-w': 1080,
             'encoding': self.charset
         }
         
@@ -91,7 +92,7 @@ class Convert():
         os.remove(self.new_html_file_path)
 
 
-def main():
+if __name__ == '__main__':
     
     # argparseの設定
     parser = argparse.ArgumentParser(

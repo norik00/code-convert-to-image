@@ -1,12 +1,16 @@
-import os
+from django.core.management import call_command
+from django.db import migrations
 
-class Convert():
 
-    def __init__(self, source_file_path, charset):
-        self.source_file_path = source_file_path
-        self.charset = charset
+def load_fixture(apps, schema_editor):
+    call_command('loaddata', 'network/fixtures/User.json')
 
-        new_fname = os.path.basename(self.source_file_path)
-        new_fpath = f'{new_fname}.html'
+class Migration(migrations.Migration):
 
-        self.new_html_file_path = os.fspath(new_fpath)
+    dependencies = [
+        ('network', '0001_initial'),
+    ]
+
+    operations = [
+        migrations.RunPython(load_fixture),
+    ]

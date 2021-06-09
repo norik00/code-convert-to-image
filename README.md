@@ -10,6 +10,10 @@ $ pip install git+https://github.com/norik00/code-converter
 $ codeconvert samlpe.py
 ```
 
+### Imgae of sample.py
+![python code](./sample.py.jpg)
+
+
 ## Library
 - [pygments](https://pygments.org/])
 - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
